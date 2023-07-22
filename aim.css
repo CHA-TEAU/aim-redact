@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display+SC&display=swap');
+@font-face {
+    font-family: 'MinionPro';
+    src: url(MinionPro-Capt.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'MinionPro';
+    font-size: 46px;
+
+    letter-spacing: 3px;
+}
+
+p{
+    font-size: 14px;
+    width: 70%;
+
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.invert{
+    width: 100%;
+
+    background-color: white;
+
+    color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+.pic{
+    width: 50%;
+    height: 600px;
+
+    background: url(j-white.png) center no-repeat;
+    background-size: cover;
+
+}
+
+.red{
+    background: url(j-red.png) center no-repeat;
+    background-size: cover;
+
+}
+
+.ivory{
+    background: url(j-ivory.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.rose{
+    background: url(j-rose.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.text{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 51px;
+}
+
+.hidden{
+    display: none;
+}
+
+.text a{
+    color: white;
+}
+
+.black a{
+    color: black;
+}
+
+@media (max-width:913px) {
+
+    .container{
+    
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .pic{
+        width: 100%;
+        height: 600px;
+
+    }
+
+    .text{
+        width: 80%;
+    }
+
+    h3{
+        margin-top: 20px;
+    }
+
+    p{
+        width: 100%;
+    }
+    
+    a{
+        margin-bottom: 20px;
+    }
+
+    .red{
+        order: -1;
+    }
+
+    .rose{
+        order: -1;
+    }
+
+}
+
+@media (max-width:535px) {
+    .pic{
+        width: 100%;
+        height: 600px;
+    
+        background: url(j-white-ver.png) center no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .red{
+        background: url(j-red-ver.png) center no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .ivory{
+        background: url(j-ivory-ver.png) no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .rose{
+        background: url(j-rose-ver.png) no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    h3{
+        font-size: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 10px;
+    }
+
+    span{
+        font-size: 14px;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .pic{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .hidden{
+        display: block;
+
+        color: white;
+
+    }
+}
